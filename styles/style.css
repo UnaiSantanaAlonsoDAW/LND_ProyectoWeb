@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #34324f;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  width: 30%;
+  margin: 15px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding-right: 30px;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+nav a:hover {
+  color: #979797;
+  transition: 0.3s;
+}
+
+.introduction {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+}
+
+.introduction p,
+h1 {
+  text-shadow: 6px 6px 4px black;
+}
+
+.introduction p {
+  font-size: x-large;
+  color: white;
+}
+
+.introduction h1 {
+  color: white;
+}
+
+.introduction h1:hover {
+  color: #979797;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.introduction p:hover {
+  color: #979797;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.finding {
+  margin: 10% 25% 0 25%;
+  padding-bottom: 10%;
+  color: white;
+}
+
+.finding h1 {
+  margin-bottom: 40px;
+}
+
+.finding-main {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.finding-img img {
+  width: 300px;
+}
+
+.finding-text {
+  max-width: 600px;
+}
+
+.finding-paragraph {
+  text-align: justify;
+  font-size: x-large;
+  padding-left: 10%;
+  text-shadow: 6px 6px 4px black;
+}
+
+footer {
+  width: 100%;
+  background-color: #212035;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  color: white;
+  margin: 0 0 0 20px;
+}
+
+footer img {
+  width: 30px;
+  margin-left: 20px;
+}
+
+.socials {
+  margin: 0 40px;
+}
+
+.finding-section,
+.history-block {
+  animation: appear ease;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+
+.finding-section:hover {
+  scale: 1.2;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.history {
+  background-color: white;
+  width: 100%;
+}
+
+.history h1 {
+  color: black;
+  text-shadow: none;
+  margin: 0 0 0 10%;
+  font-size: xx-large;
+  padding-top: 5%;
+}
+
+.history-block {
+  margin: 5% 10% 0 10%;
+  width: 80%;
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.history-block img {
+  width: 20%;
+}
+
+.history-block div {
+  width: 60%;
+  margin-left: 10%;
+}
+
+.history-block p {
+  margin-top: 10px;
+  font-size: xx-large;
+  text-align: justify;
+}
+
+.history-block h2 {
+  font-size: xx-large;
+}
+
+.history .history-block:nth-of-type(2) img,
+.history .history-block:nth-of-type(4) img {
+  margin-left: 5%;
+}
+
+.history .history-block:nth-of-type(5) {
+  padding-bottom: 10%;
+}
