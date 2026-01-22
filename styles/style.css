@@ -160,12 +160,6 @@ footer img {
   animation-range: entry 0;
 }
 
-.finding-section:hover {
-  scale: 1.2;
-  transition: all 0.5s ease;
-  cursor: pointer;
-}
-
 .history {
   background-color: white;
   width: 100%;
@@ -212,4 +206,304 @@ footer img {
 
 .history .history-block:nth-of-type(5) {
   padding-bottom: 10%;
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 60%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .introduction {
+    top: 30%;
+    left: 5%;
+    text-align: center;
+  }
+
+  .finding {
+    margin: 20% 5% 0 5%;
+  }
+
+  .finding-main {
+    flex-direction: column;
+  }
+
+  .finding-img img {
+    width: 200px;
+  }
+
+  .history-block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .history-block img {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .history-block div {
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+
+  .history-block p,
+  .history-block h2 {
+    font-size: large;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 60%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .introduction {
+    top: 30%;
+    left: 5%;
+    text-align: center;
+  }
+
+  .finding {
+    margin: 20% 5% 0 5%;
+  }
+
+  .finding-main {
+    flex-direction: column;
+  }
+
+  .finding-img img {
+    width: 200px;
+  }
+
+  .history-block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .history-block div {
+    order: 1;
+    width: 100%;
+    margin: 0;
+  }
+
+  .history-block img {
+    order: 2;
+    width: 60%;
+    margin: 20px auto 0 auto;
+  }
+
+  .history-block p,
+  .history-block h2 {
+    font-size: large;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+  }
+
+  .logo {
+    width: 110px;
+    margin: 5px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 10px;
+    padding: 0;
+  }
+
+  nav ul li a {
+    font-size: medium;
+  }
+
+  .introduction {
+    top: 30%;
+    left: 5%;
+    text-align: center;
+  }
+
+  .finding {
+    margin: 25% 5% 0 5%;
+  }
+
+  .finding-main {
+    flex-direction: column;
+  }
+
+  .finding-img img {
+    width: 200px;
+  }
+
+  .history-block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .history-block div {
+    order: 1;
+    width: 100%;
+    margin: 0;
+  }
+
+  .history-block img {
+    order: 2;
+    width: 60%;
+    margin: 20px auto 0 auto;
+  }
+
+  .history-block p,
+  .history-block h2 {
+    font-size: large;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+}
+
+/* Small devices */
+@media only screen and (min-width: 600px) {
+  header {
+    flex-direction: row;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    width: 130px;
+  }
+
+  nav ul li a {
+    font-size: large;
+  }
+
+  .finding {
+    margin: 20% 10% 0 10%;
+  }
+
+  .history-block {
+    flex-direction: column;
+  }
+
+  .history-block div {
+    order: 1;
+    width: 100%;
+    margin: 0;
+  }
+
+  .history-block img {
+    order: 2;
+    width: 50%;
+    margin: 20px auto 0 auto;
+  }
+}
+
+/* Medium devices */
+@media only screen and (min-width: 768px) {
+  nav ul {
+    gap: 20px;
+  }
+
+  .finding-main {
+    flex-direction: row;
+  }
+
+  .finding-img img {
+    width: 250px;
+  }
+
+  .history-block {
+    flex-direction: row;
+  }
+
+  .history-block img {
+    order: 1;
+    width: 30%;
+    margin: 0;
+  }
+
+  .history-block div {
+    order: 2;
+    width: 60%;
+    margin-left: 10%;
+  }
+}
+
+/* Large devices  */
+@media only screen and (min-width: 992px) {
+  .logo {
+    width: 160px;
+  }
+
+  nav ul li a {
+    font-size: x-large;
+  }
+
+  .finding {
+    margin: 10% 20% 0 20%;
+  }
+
+  .history-block img {
+    width: 20%;
+  }
+}
+
+/* Extra large devices */
+@media only screen and (min-width: 1200px) {
+  .logo {
+    width: 180px;
+  }
+
+  nav ul li a {
+    font-size: x-large;
+  }
+
+  .finding {
+    margin: 10% 25% 0 25%;
+  }
+
+  .history-block p {
+    font-size: xx-large;
+  }
 }
