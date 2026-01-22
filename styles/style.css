@@ -472,20 +472,32 @@ footer img {
 
 /* Large devices  */
 @media only screen and (min-width: 992px) {
-  .logo {
-    width: 160px;
+  .history-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
-  nav ul li a {
-    font-size: x-large;
+  /* Bloques impares */
+  .history-block:nth-child(odd) img {
+    order: 1;
   }
 
-  .finding {
-    margin: 10% 20% 0 20%;
+  .history-block:nth-child(odd) div {
+    order: 2;
+    margin-left: 10%;
   }
 
-  .history-block img {
-    width: 20%;
+  /* Bloques pares:*/
+  .history-block:nth-child(even) img {
+    order: 2;
+    margin-left: 5%;
+  }
+
+  .history-block:nth-child(even) div {
+    order: 1;
+    margin-left: 0;
+    margin-right: 10%;
   }
 }
 
