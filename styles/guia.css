@@ -51,22 +51,55 @@ nav a:hover {
   background-color: white;
 }
 
-.theme1-content {
+.theme2,
+.theme5 {
+  background-color: #34324f;
+  color: white;
+}
+
+.theme3 {
+  background-color: #2e2a4f;
+  color: white;
+}
+
+.theme4 {
+  background-color: white;
+}
+
+.theme1-content,
+.theme2-content,
+.theme3-content,
+.theme4-content,
+.theme5-content {
   margin: 0 auto;
   max-width: 60%;
+  padding: 40px 0 40px 0;
 }
-.theme1-content h2 {
+
+.theme1-content h2,
+.theme2-content h2,
+.theme3-content h2,
+.theme4-content h2,
+.theme5-content h2 {
   padding-top: 30px;
   font-size: xx-large;
 }
 
-.theme1-content p {
+.theme1-content p,
+.theme2-content p,
+.theme3-content p,
+.theme4-content p,
+.theme5-content p {
   font-size: x-large;
   padding: 20px 0 20px 0;
   text-align: justify;
 }
 
-.theme1-content img {
+.theme1-content img,
+.theme2-content img,
+.theme3-content img,
+.theme4-content img,
+.theme5-content img {
   display: block;
   margin: 0 auto;
   width: 50%;
@@ -85,9 +118,12 @@ nav a:hover {
   transition: 0.3s ease;
 }
 
-.theme2 {
-  background-color: #34324f;
-  color: white;
+.theme2-content ul li,
+.theme3-content ul li,
+.theme4-content ul li,
+.theme5-content ul li {
+  font-size: x-large;
+  padding-top: 20px;
 }
 
 footer {
