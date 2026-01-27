@@ -47,30 +47,35 @@ nav a:hover {
   transition: 0.3s;
 }
 
-.theme1 {
+.theme1,
+.theme4,
+.theme8 {
   background-color: white;
 }
 
 .theme2,
-.theme5 {
+.theme5,
+.theme7 {
   background-color: #34324f;
   color: white;
 }
 
-.theme3 {
+.theme3,
+.theme6,
+.theme9 {
   background-color: #2e2a4f;
   color: white;
-}
-
-.theme4 {
-  background-color: white;
 }
 
 .theme1-content,
 .theme2-content,
 .theme3-content,
 .theme4-content,
-.theme5-content {
+.theme5-content,
+.theme6-content,
+.theme7-content,
+.theme8-content,
+.theme9-content {
   margin: 0 auto;
   max-width: 60%;
   padding: 40px 0 40px 0;
@@ -80,7 +85,11 @@ nav a:hover {
 .theme2-content h2,
 .theme3-content h2,
 .theme4-content h2,
-.theme5-content h2 {
+.theme5-content h2,
+.theme6-content h2,
+.theme7-content h2,
+.theme8-content h2,
+.theme9-content h2 {
   padding-top: 30px;
   font-size: xx-large;
 }
@@ -89,7 +98,11 @@ nav a:hover {
 .theme2-content p,
 .theme3-content p,
 .theme4-content p,
-.theme5-content p {
+.theme5-content p,
+.theme6-content p,
+.theme7-content p,
+.theme8-content p,
+.theme9-content p {
   font-size: x-large;
   padding: 20px 0 20px 0;
   text-align: justify;
@@ -99,7 +112,11 @@ nav a:hover {
 .theme2-content img,
 .theme3-content img,
 .theme4-content img,
-.theme5-content img {
+.theme5-content img,
+.theme6-content img,
+.theme7-content img,
+.theme8-content img,
+.theme9-content img {
   display: block;
   margin: 0 auto;
   width: 50%;
@@ -121,7 +138,11 @@ nav a:hover {
 .theme2-content ul li,
 .theme3-content ul li,
 .theme4-content ul li,
-.theme5-content ul li {
+.theme5-content ul li,
+.theme6-content ul li,
+.theme7-content ul li,
+.theme8-content ul li,
+.theme9-content ul li {
   font-size: x-large;
   padding-top: 20px;
 }
