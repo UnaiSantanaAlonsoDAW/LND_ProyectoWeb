@@ -23,7 +23,7 @@ header {
 }
 
 .logo {
-  width: 30%;
+  width: 180px;
   margin: 15px;
 }
 
@@ -167,4 +167,10 @@ footer img {
 
 .socials {
   margin: 0 40px;
+}
+
+.volver {
+  text-decoration: none;
+  font-size: x-large;
+  color: black;
 }
