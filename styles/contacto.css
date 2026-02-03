@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+html,
+body {
+  height: 100%;
+  background-color: #34324f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background-color: #212035;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  width: 180px;
+  margin: 15px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding-right: 30px;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #979797;
+  transition: 0.3s;
+}
+
+footer {
+  width: 100%;
+  background-color: #212035;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0%;
+}
+footer p {
+  color: white;
+  margin: 0 0 0 20px;
+}
+
+footer img {
+  width: 30px;
+  margin-left: 20px;
+}
+
+.socials {
+  margin: 0 40px;
+}
+
+.form-card {
+  background-color: rgba(33, 32, 53, 0.85);
+  backdrop-filter: blur(6px);
+  padding: 40px;
+  border-radius: 20px;
+  color: white;
+  width: 100%;
+  max-width: 450px;
+}
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-card input,
+.form-card select {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkbox {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.form-card button {
+  background-color: #ffcc00;
+  color: #212035;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pokemon-form {
+  min-height: calc(100vh - 200px);
+  background-image: url(../imgs/pokemonform.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

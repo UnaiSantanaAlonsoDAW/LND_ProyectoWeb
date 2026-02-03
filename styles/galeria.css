@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
 * {
   margin: 0;
   padding: 0;
@@ -89,6 +100,14 @@ footer img {
   display: block;
 }
 
+.card img {
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.3);
+}
+
 .group {
   display: flex;
   align-items: center;
@@ -104,5 +123,99 @@ footer img {
   }
   to {
     translate: -100%;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px 0;
+  }
+
+  .logo {
+    width: 130px;
+  }
+
+  .carousel {
+    margin: 120px auto;
+    width: 95%;
+    flex: 1;
+  }
+
+  .card {
+    flex: 0 0 260px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  footer {
+    position: static;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 0;
+    height: auto;
+  }
+
+  footer p {
+    margin: 0;
+  }
+}
+
+/* Small devices (portrait tablets, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .carousel {
+    margin: 150px auto;
+    width: 95%;
+  }
+
+  .card {
+    flex: 0 0 320px;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .carousel {
+    margin: 180px auto;
+    width: 90%;
+  }
+
+  .card {
+    flex: 0 0 400px;
+  }
+
+  nav ul li a {
+    font-size: large;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .carousel {
+    margin: 200px auto;
+    width: 90%;
+  }
+
+  .card {
+    flex: 0 0 500px;
+  }
+}
+
+/* Extra large devices (1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .carousel {
+    width: 85%;
+  }
+
+  .card {
+    flex: 0 0 600px;
   }
 }
