@@ -175,21 +175,53 @@ footer img {
   color: black;
 }
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   header {
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding: 6px 0;
+  }
+
+  .logo {
+    width: 100px;
+    margin: 4px 0;
   }
 
   nav ul {
     flex-direction: column;
-    gap: 12px;
-    padding: 10px 0;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 0;
   }
 
-  .logo {
-    width: 130px;
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    position: static;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+    height: auto;
+  }
+
+  footer p {
+    margin: 0;
+    text-align: center;
+  }
+
+  .socials {
+    margin: 0;
+    display: flex;
+    gap: 15px;
+  }
+
+  footer img {
+    margin: 0;
   }
 
   .theme1-content,
@@ -203,11 +235,6 @@ footer img {
   .theme9-content {
     max-width: 92%;
     padding: 20px 0;
-  }
-
-  img,
-  video {
-    width: 95% !important;
   }
 
   p,
@@ -224,6 +251,19 @@ footer img {
     gap: 10px;
     height: auto;
     padding: 15px 0;
+  }
+
+  .theme1-content img,
+  .theme2-content img,
+  .theme3-content img,
+  .theme4-content img,
+  .theme5-content img,
+  .theme6-content img,
+  .theme7-content img,
+  .theme8-content img,
+  .theme9-content img,
+  .theme1-content video {
+    width: 95%;
   }
 }
 
@@ -254,10 +294,6 @@ footer img {
   .theme8-content,
   .theme9-content {
     max-width: 70%;
-  }
-
-  nav ul li a {
-    font-size: 1.2rem;
   }
 }
 

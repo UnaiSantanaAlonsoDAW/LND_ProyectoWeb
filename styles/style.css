@@ -335,25 +335,26 @@ footer img {
 /* Extra small devices */
 @media only screen and (max-width: 600px) {
   header {
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 5px 10px;
+    padding: 6px 0;
   }
 
   .logo {
-    width: 110px;
-    margin: 5px;
+    width: 100px;
+    margin: 4px 0;
   }
 
   nav ul {
-    flex-direction: row;
-    gap: 10px;
-    padding: 0;
+    flex-direction: column;
+    gap: 6px;
+    padding: 4px 0;
+    align-items: center;
   }
 
   nav ul li a {
-    font-size: medium;
+    font-size: 0.9rem;
   }
 
   .introduction {
@@ -379,16 +380,14 @@ footer img {
     text-align: center;
   }
 
-  .history-block div {
-    order: 1;
-    width: 100%;
-    margin: 0;
-  }
-
   .history-block img {
-    order: 2;
     width: 60%;
     margin: 20px auto 0 auto;
+  }
+
+  .history-block div {
+    width: 100%;
+    margin: 0;
   }
 
   .history-block p,
@@ -408,10 +407,6 @@ footer img {
   header {
     flex-direction: row;
     padding: 10px 20px;
-  }
-
-  .logo {
-    width: 130px;
   }
 
   nav ul li a {

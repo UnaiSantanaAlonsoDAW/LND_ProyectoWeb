@@ -4,6 +4,7 @@ html,
 body {
   height: 100%;
   background-color: #34324f;
+  overflow-x: hidden;
 }
 
 * {
@@ -81,6 +82,10 @@ footer img {
   max-width: 450px;
 }
 
+.form-card h1 {
+  padding-bottom: 20px;
+}
+
 .form-card form {
   display: flex;
   flex-direction: column;
@@ -124,4 +129,140 @@ footer img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0;
+  }
+
+  .logo {
+    width: 100px;
+    margin: 4px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 0;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  /* FORM */
+  .pokemon-form {
+    padding: 100px 10px 30px;
+  }
+
+  .form-card {
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .form-card h1 {
+    font-size: large;
+    text-align: center;
+  }
+
+  /* FOOTER */
+  footer {
+    position: static;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+    height: auto;
+  }
+
+  footer p {
+    margin: 0;
+    text-align: center;
+  }
+
+  .socials {
+    margin: 0;
+    display: flex;
+    gap: 15px;
+  }
+
+  footer img {
+    margin: 0;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    width: 130px;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  nav ul li a {
+    font-size: large;
+  }
+
+  .form-card {
+    max-width: 400px;
+    padding: 30px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .logo {
+    width: 150px;
+  }
+
+  nav ul {
+    gap: 25px;
+  }
+
+  .form-card {
+    max-width: 420px;
+    padding: 35px;
+  }
+
+  .form-card h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .logo {
+    width: 170px;
+  }
+
+  .form-card {
+    max-width: 450px;
+    padding: 40px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .logo {
+    width: 180px;
+  }
+
+  .form-card {
+    max-width: 450px;
+    padding: 40px;
+  }
 }

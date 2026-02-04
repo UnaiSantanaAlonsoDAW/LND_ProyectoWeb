@@ -130,17 +130,25 @@ footer img {
 @media only screen and (max-width: 600px) {
   header {
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding: 6px 0;
+  }
+
+  .logo {
+    width: 100px;
+    margin: 4px 0;
   }
 
   nav ul {
     flex-direction: column;
-    gap: 12px;
-    padding: 10px 0;
+    gap: 6px;
+    padding: 4px 0;
+    align-items: center;
   }
 
-  .logo {
-    width: 130px;
+  nav ul li a {
+    font-size: 0.9rem;
   }
 
   .carousel {
@@ -190,10 +198,6 @@ footer img {
 
   .card {
     flex: 0 0 400px;
-  }
-
-  nav ul li a {
-    font-size: large;
   }
 }
 
