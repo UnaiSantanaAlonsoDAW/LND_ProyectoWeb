@@ -527,3 +527,53 @@ header.scrolled {
   backdrop-filter: blur(6px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
+
+.rss-section {
+  background-color: #34324f;
+  color: white;
+  padding: 8% 10%;
+}
+
+.rss-section h1 {
+  margin-bottom: 40px;
+  font-size: xx-large;
+  text-shadow: 4px 4px 6px black;
+}
+
+.rss-container {
+  background: #212035;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  animation: appear ease;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+
+.rss-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #444;
+}
+
+.rss-item:last-child {
+  border-bottom: none;
+}
+
+.rss-item a {
+  color: #0084ff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: large;
+}
+
+.rss-item a:hover {
+  color: #979797;
+  transition: 0.3s;
+}
+
+.rss-item span {
+  display: block;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 5px;
+}
