@@ -1,5 +1,5 @@
 async function cargarRSS() {
-        const rssUrl = "https://rss.app/feeds/xw0qz70XVonBMSGf.xml";
+        const rssUrl = "https://rss.app/feeds/bc5SJEnloRWn0Sm4.xml";
         const api = `https://api.rss2json.com/v1/api.json?rss_url=${rssUrl}`;
 
         const container = document.getElementById("rss-container");

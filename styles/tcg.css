@@ -53,7 +53,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
   bottom: 0%;
 }
 footer p {
@@ -68,4 +67,61 @@ footer img {
 
 .socials {
   margin: 0 40px;
+}
+
+.tcg-section {
+  max-width: 60%;
+  margin: 40px auto;
+}
+
+.tcg-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.tcg-section {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.tcg-cards-section {
+  color: white;
+}
+
+.tcg-cards-content {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.tcg-cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px 20px;
+}
+
+.tcg-card {
+  flex: 0 0 calc(25% - 20px);
+  background-color: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tcg-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.tcg-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
 }
