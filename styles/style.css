@@ -39,6 +39,11 @@ header {
   margin: 15px;
 }
 
+.logo:hover {
+  scale: 1.2;
+  transition: 0.2s ease;
+}
+
 nav ul {
   display: flex;
   gap: 30px;
